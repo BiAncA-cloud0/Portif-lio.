@@ -49,3 +49,20 @@ button {
 button:hover {
   background-color: #005fa3;
 }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .projeto {
+    width: 100%;
+  }
+
+  header, footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
