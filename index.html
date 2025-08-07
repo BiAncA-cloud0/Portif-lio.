@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio - Bianca Regina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="bianca.jpg" alt="Foto de Bianca Regina" class="foto-perfil">
+    <h1>Bianca Regina</h1>
+    <p>Estudante de Análise e Desenvolvimento de Sistemas - UNINTER</p>
+
+    <nav>
+      <button onclick="mostrarSecao('sobre')">Sobre Mim</button>
+      <button onclick="mostrarSecao('habilidades')">Habilidades</button>
+      <button onclick="mostrarSecao('projetos')">Projetos</button>
+      <button onclick="mostrarSecao('contato')">Contato</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre" class="secao ativa">
+      <h2>📌 Sobre Mim</h2>
+      <p>
+        Olá! Meu nome é Bianca, sou estudante de Análise e Desenvolvimento de Sistemas pela UNINTER e terminei o primeiro semestre do curso.<br>
+        Estou aprendendo a criar sites com HTML, CSS e JavaScript, além de modelar e trabalhar com banco de dados MySQL.<br>
+        Busco uma oportunidade de estágio para aplicar e desenvolver ainda mais meus conhecimentos.
+      </p>
+    </section>
+
+    <section id="habilidades" class="secao">
+      <h2>💼 Habilidades</h2>
+      <ul>
+        <li>HTML, CSS e JavaScript (básico)</li>
+        <li>Lógica de Programação</li>
+        <li>Banco de Dados MySQL</li>
+        <li>Modelagem MER/DER</li>
+        <li>MySQL Workbench</li>
+        <li>Git e GitHub</li>
+        <li>Visual Studio Code</li>
+      </ul>
+    </section>
+
+    <section id="projetos" class="secao">
+      <h2>🌐 Projetos</h2>
+      <ul>
+        <li>
+          <a href="Formulario.html" target="_blank">
+            📝 Clique👉 Formulário de Cadastro 
+          </a>  👈Criado com HTML e CSS.
+        </li>
+        <li>
+          <a href="receita.html" target="_blank">
+            🍔 Clique👉 Site de Receitas
+          </a>  👈Criado com HTML, CSS e JavaScript.
+        </li>
+        <li>
+          <a href="crud.html" target="_blank">
+            🗃️ Clique👉 CRUDcrud.html
+          </a>  👈 Projeto com comandos SQL de banco de dados.
+        </li>
+      </ul>
+    </section>
+
+    <section id="contato" class="secao">
+      <h2>📫 Contato</h2>
+      <p>Email: biancaregina809@gmail.com</p>
+      <p>Número:(12)997880032</p>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Bianca Regina</p>
+  </footer>
+
+  <script>
+    function mostrarSecao(id) {
+      const secoes = document.querySelectorAll('.secao');
+      secoes.forEach(secao => secao.classList.remove('ativa'));
+      document.getElementById(id).classList.add('ativa');
+    }
+  </script>
+</body>
+</html>
